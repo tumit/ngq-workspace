@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgqDatepickerComponent } from 'ngq-datepicker';
+import { NgqDatepickerComponent, NgqDatepickerModule } from 'ngq-datepicker';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NgqDatepickerComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgqDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

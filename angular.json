@@ -60,7 +60,9 @@
             "styles": [
               "projects/ngq-tester/src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -117,7 +119,9 @@
             "styles": [
               "projects/ngq-tester/src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ],
             "assets": [
               "projects/ngq-tester/src/favicon.ico",
               "projects/ngq-tester/src/assets"
@@ -138,34 +142,6 @@
         }
       }
     },
-    "ngq-tester-e2e": {
-      "root": "projects/ngq-tester-e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/ngq-tester-e2e/protractor.conf.js",
-            "devServerTarget": "ngq-tester:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ngq-tester:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/ngq-tester-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    }
   },
   "defaultProject": "ngq-datepicker"
 }

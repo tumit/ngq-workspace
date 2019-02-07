@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $: any;
 @Component({
   selector: 'ngq-datepicker',
   template: `
@@ -14,6 +14,9 @@ export class NgqDatepickerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(document).ready(function () {
+      alert('I am Called From jQuery');
+    });
   }
 
 }
