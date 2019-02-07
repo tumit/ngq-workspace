@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngq-datepicker',
+  selector: 'ngq-datepicker',
   template: `
     <p>
       ngq-datepicker works!
