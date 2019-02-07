@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import 'bootstrap-datepicker';
 declare var $: any;
+
 @Component({
   selector: 'ngq-datepicker',
   template: `
